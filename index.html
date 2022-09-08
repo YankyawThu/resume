@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "icon" href ="me.png" type = "image/x-icon">
+    <style>
+        .bg {
+            font-family: 'cera-round-pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-image: url('wallpapers/bg1.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.9;
+        }
+        .label_text {
+            color: rgb(248, 248, 248);
+        }
+        .p_text {
+            color: rgb(238, 238, 238);
+            font-size: 12px;
+        }
+        .h_text {
+            color: rgb(247, 247, 247);
+            font-size: large;
+            font-weight: bold;
+        }
+        .po_text {
+            font-size: 9px;
+        }
+        .content_height {
+            height: 600px;
+        }
+        .avatar {
+            background-image: url('yan.jpg');
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            background-position: center;
+            background-size: cover;
+        }
+            /* Create an active/current tablink class */
+        .tab button.active {
+            color: #0EA5E9;
+        }
+
+        .page button.active {
+            color: #f7f7f7;
+        }
+            /* Style the tab content */
+        .tabcontent {
+            display: none;
+        }
+        .akoneya {
+            background-image: url('projects/akoneya.png');
+            width: 150px;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .aaa {
+            background-image: url('projects/aaa.png');
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .e95 {
+            background-image: url('projects/e95.png');
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .crm {
+            background-image: url('projects/crm.png');
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .food_order {
+            background-image: url('projects/food_order.png');
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <title>Yankyaw Thu</title>
+</head>
+<body class="bg-slate-900 bg">
+    <div id="app">
+        <div class="flex py-10 lg:py-24">
+            <div class="flex-none w-16 lg:w-40">
+            </div>
+            <div class="content_height grow">
+                <div class="flex flex-wrap">
+                    <div class="w-full content_height lg:w-72 bg-slate-800 border border-gray-700 mb-3 lg:mb-0 lg:mr-3 rounded-lg">
+                        <div class="p-5">
+                            <div class="m-5">
+                                <div class="avatar m-auto"></div>
+                                <div class="relative h_text text-center my-2">Mr. Yankyaw Thu <span class="absolute bottom-5 text-slate-600 po_text">B.C.Sc</span></div>
+                                <div class="text-center text-slate-300"><span class="p_text font-semibold text-slate-400 py-1 px-2 bg-slate-700 rounded">Web Developer</span></div>
+                            </div>
+                            <div class="border-t border-gray-700"></div>
+                            <div class="py-5">
+                                <ul>
+                                    <li class="mb-5">
+                                        <div class="flex flex-row">
+                                            <div class="self-center bg-slate-700 rounded-lg">
+                                                <i class="fa-solid fa-envelope text-sky-500 p-3"></i>
+                                            </div>
+                                            <div class="ml-3">
+                                                <label class="text-slate-500 text-xs">EMAIL</label>
+                                                <p class="p_text">yankyawthudev97@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-5">
+                                        <div class="flex flex-row">
+                                            <div class="self-center bg-slate-700 rounded-lg">
+                                                <i class="fa-solid fa-clock text-sky-500 p-3"></i>
+                                            </div>
+                                            <div class="ml-3">
+                                                <label class="text-slate-500 text-xs">DATE OF BIRTH</label>
+                                                <p class="p_text">1-Mar-1997</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-5">
+                                        <div class="flex flex-row">
+                                            <div class="self-center bg-slate-700 rounded-lg">
+                                                <i class="fa-solid fa-phone text-sky-500 p-3"></i>
+                                            </div>
+                                            <div class="ml-3">
+                                                <label class="text-slate-500 text-xs">PHONE</label>
+                                                <p class="p_text">+959 780-393-069</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-5">
+                                        <div class="flex flex-row">
+                                            <div class="self-center bg-slate-700 rounded-lg">
+                                                <i class="fa-solid fa-globe text-sky-500 p-3"></i>
+                                            </div>
+                                            <div class="ml-3">
+                                                <label class="text-slate-500 text-xs">Nationality</label>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flag_of_Myanmar.svg/1200px-Flag_of_Myanmar.svg.png" width="20" height="20" alt="Myanmar (Burma)">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="text-center">
+                                    <a href="https://www.facebook.com/yankyawthu.thu" target="_blank" class="text-slate-700 px-1"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://t.me/yatoro_79" target="_blank" class="text-slate-700 px-1"><i class="fa-brands fa-telegram"></i></a>
+                                    <a href="https://twitter.com/duuduuchatt" target="_blank" class="text-slate-700 px-1"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/yankyaw-thu-235473191" target="_blank" class="text-slate-700 px-1"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                                <div class="text-center my-5">
+                                    <a href="yan.pdf" download="yan.pdf" class="py-2 px-4 bg-sky-500 rounded-md text-sm">Download CV</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full content_height lg:w-96 lg:grow bg-slate-800 border border-gray-700 mt-3 lg:mt-0 lg:ml-3 overflow-auto scroll-smooth rounded-lg">
+                        <div class="flex justify-between">
+                            <div class="uppercase h_text self-end px-5">
+                                {{label}}
+                            </div>
+                            <div class="tab bg-slate-700 rounded-bl-lg px-3">
+                                <button class="tablinks text-xs py-3 px-2 text-slate-300 font-semibold" @click="event => changeTab('about',event)" id="activeFirst">ABOUT</button>
+                                <button class="tablinks text-xs py-3 px-2 text-slate-300 font-semibold" @click="event => changeTab('skills',event)">SKILLS</button>
+                                <button class="tablinks text-xs py-3 px-2 text-slate-300 font-semibold" @click="event => changeTab('exp',event)">EXP</button>
+                                <button class="tablinks text-xs py-3 px-2 text-slate-300 font-semibold" @click="event => changeTab('projects',event)">PROJECTS</button>
+                            </div>
+                        </div>
+                        <div class="border-2 border-sky-500 ml-5 my-2 w-7 rounded-full"></div>
+                        <div id="about" class="tabcontent p_text p-5 pt-1">
+                            <p>I'm Web Developer from Yangon, Burma, working in web development. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                                <br><br>
+                                My Job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+                            </p>
+                            <div class="h_text my-5">What I'm Doing</div>
+                            <div class="flex flex-wrap justify-around">
+                                <div class="flex flex-row bg-slate-700 w-72 mb-5 p-5 rounded-lg">
+                                    <div>
+                                        <i class="fa-sharp fa-solid fa-person-drowning text-sky-500 text-2xl"></i>                                   
+                                    </div>
+                                    <div class="ml-3">
+                                        <div class="mb-2 font-bold text-white">Web Design</div>
+                                        <p class="p_text">The most modern and high-quality design made at a professional level.</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row bg-slate-700 w-72 mb-5 p-5 rounded-lg">
+                                    <div>
+                                        <i class="fa-solid fa-code text-sky-500 text-2xl"></i>                                     
+                                    </div>
+                                    <div class="ml-3">
+                                        <div class="mb-2 font-bold text-white">Web Development</div>
+                                        <p class="p_text">High-quality development of sites at the professional level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="skills" class="tabcontent p-5 pt-1">
+                            <div class="font-bold text-white">
+                                Professional
+                            </div>
+                            <div class="flex flex-wrap justify-around p_text my-3">
+                                <div class="bg-slate-700 w-72 mb-5 p-5 rounded-lg">
+                                    <div class="font-bold text-sky-500">
+                                        Frontend                                  
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-html5"></i> HTML</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-css3"></i> CSS</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"># Tailwind</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"># JQuery</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"># InertiaJs</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-vuejs"></i> VueJs</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"># Socket.js</span>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-700 w-72 mb-5 p-5 rounded-lg">
+                                    <div class="font-bold text-sky-500">
+                                        Backend                                  
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-php"></i> PHP</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"># SQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="font-bold text-white">
+                                Entry
+                            </div>
+                            <div class="p_text my-3">
+                                <div class="bg-slate-700 mb-5 p-5 rounded-lg">
+                                    <div class="font-bold text-sky-500">
+                                        Mobile                                  
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"># Flutter</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"># Dart</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="font-bold text-white">
+                                Other
+                            </div>
+                            <div class="p_text my-3">
+                                <div class="bg-slate-700 mb-5 p-5 rounded-lg">
+                                    <div class="mt-2">
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-github"></i> Github</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-gitlab"></i> Gitlab</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-jira"></i> Jira</span>
+                                        <span class="inline-block px-2 py-1 bg-slate-800 rounded mr-2 mb-2"><i class="fa-brands fa-figma"></i> Figma</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="exp" class="tabcontent p-5 pt-1">
+                            <div>
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="text-lg font-bold text-white">
+                                        Tamron Technology 
+                                    </div>
+                                    <div class="self-center po_text text-slate-500">
+                                        <i class="fa-solid fa-clock"></i>
+                                        1 year - currently
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <span class="po_text p-1 bg-slate-700 rounded text-sky-500 mr-2">PHP Developer</span>
+                                    <span class="po_text p-1 bg-slate-700 rounded text-sky-500">Foreign</span>
+                                </div>
+                                <br>
+                                <p class="p_text">
+                                    Tamron is the Technology company. They build complex digital products for clients in Myanmar. My work in this are develop and maintain web applications. Release the RestApi for mobile developers. Before production, we all are discuss with QA team and fix bugs if occured. According our project, sometimes I need to do deep learning that is may be new framework or new programming. Then build hosts on Linux server for testing before live.
+                                </p>
+                                <div class="p_text my-2 font-semibold">
+                                    Company Profile: <a href="https://www.tamrontech.com" target="_blank" class="text-sky-500">https://www.tamrontech.com</a>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="po_text inline-block my-2 text-slate-500 rounded-full"> >>>>>>>> <<<<<<<< </div>
+                            </div>
+                            <div>
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="text-lg font-bold text-white">
+                                        SweetyHome Industry Co.,Ltd 
+                                    </div>
+                                    <div class="self-center po_text text-slate-500">
+                                        <i class="fa-solid fa-clock"></i>
+                                        1 year & 11 months
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <span class="po_text p-1 bg-slate-700 rounded text-sky-500 mr-2">IT Programmer</span>
+                                    <span class="po_text p-1 bg-slate-700 rounded text-sky-500">Local</span>
+                                </div>
+                                <br>
+                                <p class="p_text">
+                                    SweetyHome is the furniture manufacturing company. My responsibilies in this company are to make SAP reports and Crystal reports for their finance and other relevent to audit easily and also customize SAP boyum with C# cause of user requirements. Sometimes maintain and modify StockReport Web application if users need other features I have to do it. They often meet online with any meeting softwares eg. Zoom, Microsoft team, Google Meet etc.. So, they need to record who join to this meeting, meeting label and other information about meeting. And sometimes occur meeting conflict so my responsibility is to schedule and easily register about meeting information for users.
+                                </p>
+                                <div class="p_text my-2 font-semibold">
+                                    Company Profile: <a href="https://www.sweetyhomemyanmar.com" target="_blank" class="text-sky-500">https://www.sweetyhomemyanmar.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="projects" class="tabcontent p_text p-5 pt-1">
+                            <div class="flex flex-wrap">
+                                <div class="mr-5 mb-5">
+                                    <div class="akoneya border border-sky-500 rounded-lg"></div>
+                                    <div class="p_text text-center p-1 font-semibold">Akoneya</div>
+                                </div>
+                                <div class="mr-5 mb-5">
+                                    <div class="aaa border border-sky-500 rounded-lg"></div>
+                                    <div class="p_text text-center p-1 font-semibold">AAA VPN</div>
+                                </div>
+                                <div class="mr-5 mb-5">
+                                    <div class="e95 border border-sky-500 rounded-lg"></div>
+                                    <div class="p_text text-center p-1 font-semibold">E95</div>
+                                </div>
+                                <div class="mr-5 mb-5">
+                                    <div class="crm border border-sky-500 rounded-lg"></div>
+                                    <div class="p_text text-center p-1 font-semibold">CRM</div>
+                                </div>
+                                <div class="mr-5 mb-5">
+                                    <div class="food_order border border-sky-500 rounded-lg"></div>
+                                    <div class="p_text text-center p-1 font-semibold">Food Order</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-none w-16 lg:w-40">
+            </div>
+        </div>
+        <div class="hidden lg:block p_text text-center mb-5">
+            Copyright © 2022 All Rights Reserved By <span class="text-sky-500 font-bold">Yan</span>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue
+        createApp({
+            data() {
+                return {
+                    label: ''
+                }
+            },
+            methods: {
+                changeTab(content, event) {
+                    var i, tabcontent, tablinks
+                    this.label = content
+                    document.getElementById(content).classList.add('active')
+                    tabcontent = document.getElementsByClassName("tabcontent")
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none"
+                    }
+                    tablinks = document.getElementsByClassName("tablinks")
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "")
+                    }
+                    document.getElementById(content).style.display = "block"
+                    event.currentTarget.className += " active";
+                }
+            },
+            mounted() {
+                const ele = document.getElementById('activeFirst');
+                ele.click()
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>
