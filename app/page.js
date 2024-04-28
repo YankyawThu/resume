@@ -183,7 +183,7 @@ export default function Home() {
 
   const RoadMap = () => {
     return (
-      <div className="timeline flex-none w-auto lg:w-[550px] self-center my-14 lg:my-0">
+      <div className="timeline flex-none w-full lg:w-[550px] self-center my-14 lg:my-0">
         <div className="text-2xl text-[#EC4899] text-center mb-10">How I'v been growing..</div>
         <ul>
           <li className="left">
