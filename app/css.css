@@ -149,7 +149,6 @@ box-shadow: 0 0 20px rgba(0,226,255,1),
 }
 
 .skew1:after, .skew3:after {
-    content: "";
     position: absolute;
     border: 0px solid black;
     height: 100%;
@@ -161,7 +160,6 @@ box-shadow: 0 0 20px rgba(0,226,255,1),
 
 .skew1:before, .skew3:before {
     position: absolute;
-    content: "";
     top: -8px;
     height: 120%;
     width: 40px;
@@ -756,13 +754,4 @@ box-shadow: 0 0 20px rgba(0,226,255,1),
     height: 4px;
     background: #8B5CF6;
     transform-origin: 0%;
-}
-
-[data-aos=fade-down-left] {
-    transform: translate3d(20px, -10px, 0) !important;
-}
-
-.aos-animate {
-    opacity: 1;
-    transform: translateZ(0) !important;
 }
