@@ -412,7 +412,7 @@ export default function Home() {
       <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 gap-y-8 lg:gap-y-0 my-10 lg:my-[100px]">
         <div className="place-self-center text-center">
           <div className="mb-10 text-xl">Feel freely to look my resume</div>
-          <Link href="https://docs.google.com/document/d/1uPRTJA04eT3_SjaT7IJ-ajVDpnKU1Y21QKUXLKTsms8/edit?usp=sharing" target="_blank" className="down-btn border-[1px] border-black dark:border-white">Resume</Link>
+          <Link href="/question" className="down-btn border-[1px] border-black dark:border-white">Resume</Link>
         </div>
         <div className="flex flex-row border-l-[1px] border-black dark:border-white py-[20px]">
           <div className="flex-none w-10 flex flex-col self-center lg:mr-10 border-[1px] border-l-0 border-black dark:border-white rounded-tr rounded-br">
