@@ -11,7 +11,7 @@ export default function Question() {
         const response = await fetch(`/api/add-survey?seeker=${seeker}`)
         const data = await response.json()
         
-        window.open('https://docs.google.com/document/d/1uPRTJA04eT3_SjaT7IJ-ajVDpnKU1Y21QKUXLKTsms8/edit?usp=sharing', '_blank')
+        window.open('https://docs.google.com/document/d/1uPRTJA04eT3_SjaT7IJ-ajVDpnKU1Y21QKUXLKTsms8/edit?usp=sharing')
     }
 
     return (
