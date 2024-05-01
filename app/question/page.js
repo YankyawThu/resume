@@ -1,17 +1,19 @@
 'use client'
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Question() {
     const [seeker, setSeeker] = useState('y')
+    const router = useRouter()
 
     async function submit(event) {
         event.preventDefault()
-
-        const response = await fetch(`/api/add-survey?seeker=${seeker}`)
-        const data = await response.json()
         
-        window.open('https://docs.google.com/document/d/1uPRTJA04eT3_SjaT7IJ-ajVDpnKU1Y21QKUXLKTsms8/edit?usp=sharing', '_self')
+        const response = await fetch(`/api/add-survey?seeker=${seeker}`)
+        // const data = await response.json()
+        
+        router.push('/yankyawthu-resume.pdf')
     }
 
     return (
