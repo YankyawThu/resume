@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdOutlineLightMode, MdOutlineDarkMode, MdOutlineAttachMoney, MdOutlinePhoneIphone, MdOutlineEmail } from "react-icons/md";
-import { BsBuildings } from "react-icons/bs";
+import { BsBuildings, BsFiletypeScss } from "react-icons/bs";
 import { FaHtml5, FaLaravel, FaCss3, FaBootstrap, FaReact, FaGithub, FaOpencart, FaLine, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { SiPhp, SiTailwindcss, SiJquery, SiInertia, SiVuedotjs, SiNextdotjs, SiMysql, SiGitlab } from "react-icons/si";
+import { SiPhp, SiTailwindcss, SiJquery, SiInertia, SiVuedotjs, SiNextdotjs, SiMysql, SiGitlab, SiRedux, SiRedis } from "react-icons/si";
 import { IoLogoJavascript, IoPeopleOutline, IoLocationOutline } from "react-icons/io5";
-import { BsFiletypeScss } from "react-icons/bs";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { motion, useScroll } from "framer-motion"
 import Link from 'next/link'
 import AOS from 'aos';
@@ -170,11 +170,14 @@ export default function Home() {
                   <SiVuedotjs className="text-2xl mx-2 my-2 text-green-600" />
                   <FaReact className="text-2xl mx-2 my-2 text-cyan-500" />
                   <SiNextdotjs className="text-2xl mx-2 my-2 text-black dark:text-white" />
+                  <SiRedux className="text-2xl mx-2 my-2 text-purple-500" />
                 </div>
               </div>
               <div className="inline-flex items-center my-1">
                 <span className="text-gray-500 dark:text-gray-400">Database</span> -
                 <SiMysql className="text-[40px] mx-2 text-blue-800" />
+                <BiLogoPostgresql className="text-2xl mx-2 my-2 text-cyan-600" />
+                <SiRedis className="text-2xl mx-2 my-2 text-red-500" />
               </div>
               <div className="inline-flex items-center my-1">
                 <span className="text-gray-500 dark:text-gray-400">CI/CD</span> -
@@ -200,7 +203,7 @@ export default function Home() {
                 <div className="text-xs">Web Developer</div>
               </div>
               <div className="time">
-                <div>Now 2024</div>
+                <div>May 2024</div>
               </div>
             </li>
 
