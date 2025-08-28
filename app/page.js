@@ -24,8 +24,8 @@ export default function Home() {
   // const [welcomeMsg, setWelcomeMsg] = useState(true)
   const { scrollYProgress } = useScroll()
   
-  const position = 'web developer'
-  const exp = '3 years and 8 months'
+  const position = 'Full-stack developer'
+  const exp = '3+ years'
   
   useEffect(() => {
     // setTimeout(() => {
@@ -74,7 +74,7 @@ export default function Home() {
     return (
       <div className="flex flex-row justify-center py-3 items-center">
         <div className="relative mr-5">
-          <Image src="/me.png" width={50} height={30} alt="Yan" className="rounded-full" />
+          <Image src="/me.jpg" width={50} height={30} alt="Yan" className="rounded-full" />
           <Image src="/welcomeText.png" width={100} height={100} data-aos="fade-down-left" data-aos-duration="2000" alt="welcome" className="absolute max-w-none w-[150px] h-[90px] top-6 right-10" />
         </div>
         {theme == 'dark' ? 
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="skew flex flex-col lg:flex-row justify-center items-center my-5 lg:my-[60px] mx-8 lg:mx-[100px]">
           <div className="inner grow">
             <div className="text-2xl pt-3 text-[#EC4899]">What I am..</div>
-              <p className="text-gray-500 dark:text-gray-400 pt-2">I'm a passionate and results-driven {position} with <span className="text-black dark:text-white">{exp}</span> exp and a deep love for technology. A web developer with expertise in responsive web design and API development. Strong at developing and maintaining high-quality web applications and quickly understanding project architecture. Excellent problem solver known for delivering projects on time and staying up-to-date with web development trends.</p>
+              <p className="text-gray-500 dark:text-gray-400 pt-2">{position} with <span className="text-black dark:text-white">{exp}</span> exp and a deep love for technology. A web developer with expertise in responsive web design and API development. Strong at developing and maintaining high-quality web applications and quickly understanding project architecture. Excellent problem solver known for delivering projects on time and staying up-to-date with web development trends.</p>
           </div>
           <div className="flex-none w-96 mt-8 lg:mt-0">
             <Image src="/coding.gif" width={80} height={80} alt="coding" unoptimized className="m-auto w-56 h-56 rounded-full" />
@@ -210,10 +210,10 @@ export default function Home() {
             <li className="right">
               <div className="content mt-10" data-aos="zoom-in" data-aos-duration="1000">
                 <div className="inline-flex text-gray-500 dark:text-gray-400 items-center"><BsBuildings className="mr-1" />Freelance</div>
-                <div className="text-xs">Backend Developer</div>
+                <div className="text-xs">Web Developer</div>
               </div>
               <div className="time">
-                <div>Apr 2024</div>
+                <div>July 2024</div>
               </div>
             </li>
 
@@ -323,7 +323,7 @@ export default function Home() {
             </span>
             <div className="proj-name text-black dark:text-white">Customer Relationship Management</div>
             <p className="text-gray-500 dark:text-gray-400">
-              In this project, Frontend is using VueJs version 2 and Backend is using Laravel and being connected with MetaTrader 5 platform. We developed a CRM web app using MetaTrader 5 API for the one of Forex Exchange Trading Company. Also we made our own package and analyzed the MeteTrader 5 API documentation.
+              CRM solution integrated with MetaTrader 5 or a Forex exchange company. Included a custom-built Laravel package. <br /><br /> Stack - HTML5, CSS3, Vue.js, Vue router , Laravel, Git, Mysql
             </p>
             <div className="shine"></div>
             <div className="background">
@@ -353,7 +353,8 @@ export default function Home() {
             </span>
             <div className="proj-name text-black dark:text-white">Ecommerce</div>
             <p className="text-gray-500 dark:text-gray-400">
-              In this project, Website is using a full stack framework, Laravel. Anyone can sell easily by just uploading a post. Buyers are able to give reviews and ratings. Sellers can sell to anyone. It also has real time notification and using Facebook and Google authentications.            </p>
+              E-commerce app supporting 2FA, third-party logins, and email verification. Focused on customer-side frontend. <br /><br /> Stack - HTML5, CSS3, Next.js, Express.js, Mysql
+            </p>
             <div className="shine"></div>
             <div className="background">
               <div className="tiles">
@@ -382,7 +383,8 @@ export default function Home() {
             </span>
             <div className="proj-name text-black dark:text-white">HoHoDiDi</div>
             <p className="text-gray-500 dark:text-gray-400">
-              In this project, Backend is using Laravel and also made a web app for mobile with VueJs but that was not deployed yet. Developed new features and maintained the admin panel and released the RESTApis for mobile developers. App has this feature, customers can order food, make payments, reviews, search restaurants or other entertainments, nearby map and also can be searched with nearby locations.            </p>
+              Food ordering and entertainment app. Features include nearby search, payments, and mobile- riendly REST API. <br /><br /> Stack - HTML5, CSS3, Vue.js, Vue router , Laravel, Git, Mysql <br /> Link - https://hohodidi.com
+            </p>
             <div className="shine"></div>
             <div className="background">
               <div className="tiles">
@@ -443,7 +445,7 @@ export default function Home() {
           </div>
           <div>
             <div className="flex-none relative slider-thumb hidden lg:flex justify-center items-center lg:mr-20">
-              <Image src="/me2.png" width={70} height={70} alt="Yan" className="absolute" />
+              <Image src="/me2.png" width={80} height={80} alt="Yan" className="absolute" />
               {/* {footerMsg == true ? <Image src="/textbox.png" width={100} height={100} alt="alert" className="absolute" /> : <></>} */}
             </div>
           </div>
